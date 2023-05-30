@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header">ADVICE #{{ id }}</div>
+    <div class="card-body">"{{ advice }}"</div>
+    <div class="card-footer">
+      <img
+        class="divider"
+        src="/assets/pattern-divider-desktop.svg"
+        alt="divider"
+      />
+      <button (click)="getAdvice()">
+        <img src="/assets/icon-dice.svg" alt="dice" />
+      </button>
+    </div>
+  </div>
+</div>
