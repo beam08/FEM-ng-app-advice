@@ -58,6 +58,7 @@
   width: 50px;
   background-color: var(--Neon-Green);
   border-radius: 50%;
+  transition: transform 0.7s ease-in-out;
 }
 
 .divider {
@@ -71,12 +72,11 @@
 
 .card-footer button:hover {
   box-shadow: 0 1px 25px var(--Neon-Green);
-}
-.card-footer button img:hover {
   transform: rotate(50deg);
   transition: transform 0.7s ease-in-out;
 }
-.card-footer button img:active {
+
+.card-footer button:active {
   transform: rotate(360deg);
   transition: transform 0.7s ease-in-out;
 }
