@@ -22,3 +22,7 @@
 body {
   background-color: var(--Dark-Blue);
 }
+
+button {
+  -webkit-tap-highlight-color: transparent;
+}
