@@ -12,6 +12,7 @@
   height: 300px;
   background-color: var(--Dark-Grayish-Blue);
   border-radius: 8px;
+  align-items: center;
 }
 
 .card-header {
@@ -29,7 +30,7 @@
 .card-body {
   font-size: 28px;
   padding: 10px;
-  height: 150px;
+  min-height: 55%;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -44,9 +45,9 @@
   align-items: center;
 }
 
-.card-footer button {
+.card button {
   cursor: pointer;
-  margin-top: 165px;
+  margin-top: 275px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -65,18 +66,18 @@
   width: 90%;
 }
 
-.card-footer button img {
+.card button img {
   height: 20px;
   transition: transform 0.7s ease-in-out;
 }
 
-.card-footer button:hover {
+.card button:hover {
   box-shadow: 0 1px 25px var(--Neon-Green);
   transform: rotate(50deg);
   transition: transform 0.7s ease-in-out;
 }
 
-.card-footer button:active {
+.card button:active {
   transform: rotate(360deg);
   transition: transform 0.7s ease-in-out;
 }
