@@ -7,6 +7,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./advice-generator-main.component.css'],
 })
 export class AdviceGeneratorMainComponent implements OnInit {
+  isClicked = false;
+
   private data: any = [];
   id: number = 0;
   advice: string = '';
@@ -14,7 +16,17 @@ export class AdviceGeneratorMainComponent implements OnInit {
   ngOnInit(): void {
     this.getAdvice();
   }
+
+
+  onButtonClick() {
+     // Reset the animation class after 700ms (0.7 seconds)
+  }
+
   getAdvice() {
+    this.isClicked = true;
+    setTimeout(() => {
+      this.isClicked = false;
+    }, 700);
     const APIurl = 'https://api.adviceslip.com/advice';
     this.http.get(APIurl).subscribe((res) => {
       this.data = res;

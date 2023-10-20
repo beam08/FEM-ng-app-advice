@@ -61,10 +61,24 @@
   transition: transform 0.7s ease-in-out;
 }
 
-.button:active {
+/* .button:active {
   transform: rotate(360deg);
   transition: transform 0.7s ease-in-out;
+} */
+
+.button.clicked {
+  animation: spin 0.7s ease-in-out;
 }
+
+@keyframes spin {
+  0% {
+    transform: rotate(50deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 .button {
   cursor: pointer;
   display: flex;
