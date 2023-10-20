@@ -1,11 +1,14 @@
+
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
+  flex-direction: column;
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 500px;
@@ -39,48 +42,48 @@
   align-items: center;
   color: var(--Light-Cyan);
 }
-
 .card-footer {
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  height: 50px;
 }
 
-.card button {
+.divider {
+  width: 70%;
+}
+
+.button img {
+  height: 20px;
+  transition: transform 0.7s ease-in-out;
+}
+
+.button:hover {
+  box-shadow: 0 1px 25px var(--Neon-Green);
+  transform: rotate(50deg);
+  transition: transform 0.7s ease-in-out;
+}
+
+.button:active {
+  transform: rotate(360deg);
+  transition: transform 0.7s ease-in-out;
+}
+.button {
   cursor: pointer;
-  margin-top: 285px;
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   height: 50px;
   border: none;
-  padding: 10px;
+  padding: 5px;
   width: 50px;
   background-color: var(--Neon-Green);
   border-radius: 50%;
   transition: transform 0.7s ease-in-out;
+  position: relative;
+  bottom: 25px;
 }
-
-.divider {
-  width: 90%;
-}
-
-.card button img {
-  height: 20px;
-  transition: transform 0.7s ease-in-out;
-}
-
-.card button:hover {
-  box-shadow: 0 1px 25px var(--Neon-Green);
-  transform: rotate(50deg);
-  transition: transform 0.7s ease-in-out;
-}
-
-.card button:active {
-  transform: rotate(360deg);
-  transition: transform 0.7s ease-in-out;
+@media screen and (max-width: 800px) {
+    .card {
+    width: 90%;
+    min-height: auto;
+  }
 }

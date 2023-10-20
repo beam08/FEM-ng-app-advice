@@ -2,15 +2,17 @@
   <div class="card">
     <div class="card-header">ADVICE #{{ id }}</div>
     <div class="card-body">"{{ advice }}"</div>
-    <div class="card-footer">
-      <img
+    <img
         class="divider"
         src="/assets/pattern-divider-desktop.svg"
         alt="divider"
       />
+    <div class="card-footer">
+      
     </div>
-    <button (click)="getAdvice()">
+    
+  </div>
+  <button class="button" (click)="getAdvice()">
       <img src="/assets/icon-dice.svg" alt="dice" />
     </button>
-  </div>
 </div>
